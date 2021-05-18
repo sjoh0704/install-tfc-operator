@@ -17,10 +17,11 @@
 
 
 ## 설치 가이드
-0. [yaml 수정](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-0-olm-yaml-%EC%88%98%EC%A0%95-%EC%88%98%EC%A0%95)
-1. [CRD 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-1-crds-%EC%83%9D%EC%84%B1)
-2. [RBAC 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-2-olm-%EC%84%A4%EC%B9%98)
-3. [Deployment 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-3-%EB%8F%99%EC%9E%91-%ED%99%95%EC%9D%B8)
+0. [yaml 수정](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-0-yaml-%EC%88%98%EC%A0%95)
+1. [Namespace 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-0-yaml-%EC%88%98%EC%A0%95)
+2. [CRD 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-1-crds-%EC%83%9D%EC%84%B1)
+3. [RBAC 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-2-olm-%EC%84%A4%EC%B9%98)
+4. [Deployment 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-3-%EB%8F%99%EC%9E%91-%ED%99%95%EC%9D%B8)
 
 ## Step 0. yaml 수정
 
