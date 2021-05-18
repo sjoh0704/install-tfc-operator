@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tfc-operator
+  namespace: tfapplyclaim
+spec:
+  selector:
+    matchLabels:
+      name: tfc-operator
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: tfc-operator
+    spec:
+      containers:
+      - command:
+        - /manager
+        args:
+        - --enable-leader-election
+        image: tmaxcloudck/tfapplyclaim-operator:b5.0.0.0
+        name: manager
+        resources:
+          limits:
+            cpu: 100m
+            memory: 30Mi
+          requests:
+            cpu: 100m
+            memory: 20Mi
+      terminationGracePeriodSeconds: 10
