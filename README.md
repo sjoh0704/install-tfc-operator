@@ -18,10 +18,10 @@
 
 ## 설치 가이드
 0. [yaml 수정](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-0-yaml-%EC%88%98%EC%A0%95)
-1. [Namespace 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-0-yaml-%EC%88%98%EC%A0%95)
-2. [CRD 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-1-crds-%EC%83%9D%EC%84%B1)
-3. [RBAC 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-2-olm-%EC%84%A4%EC%B9%98)
-4. [Deployment 생성](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-3-%EB%8F%99%EC%9E%91-%ED%99%95%EC%9D%B8)
+1. [Namespace 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-namespace-%EC%83%9D%EC%84%B1)
+2. [CRD 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-2-crd-%EC%83%9D%EC%84%B1)
+3. [RBAC 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-3-rbac-%EC%83%9D%EC%84%B1)
+4. [Deployment 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-4-deployment-%EC%83%9D%EC%84%B1)
 
 ## Step 0. yaml 수정
 
@@ -45,10 +45,10 @@
   * [04_deployment.yaml](manifest/04_deployment.yaml) 실행
 
 ## 삭제 가이드
-1. [Deployment 삭제](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-1-%EC%82%AC%EC%9A%A9%EC%A4%91%EC%9D%B8-%EB%A6%AC%EC%86%8C%EC%8A%A4-%EC%A0%9C%EA%B1%B0)
-2. [RBAC 삭제](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-2-%EC%84%A4%EC%B9%98-%EC%A0%9C%EA%B1%B0)
-3. [CRD 제거](https://github.com/tmax-cloud/install-OLM/blob/main/README.md#step-3-crd-%EC%A0%9C%EA%B1%B0)
-4. [Namespace 제거]
+1. [Deployment 삭제](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-deployment-%EC%82%AD%EC%A0%9C)
+2. [RBAC 삭제](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-2-rbac-%EC%82%AD%EC%A0%9C)
+3. [CRD 제거](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-3-crd-%EC%A0%9C%EA%B1%B0)
+4. [Namespace 제거](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-4-namespace-%EC%A0%9C%EA%B1%B0)
 
 ## Step 1. Deployment 삭제
 * 목적 : `tfc-operator의 Deployment를 삭제한다.`
