@@ -56,8 +56,8 @@
     
 
 ## 설치 가이드
-0. [tfc-operator Config 설정](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-0-yaml-%EC%88%98%EC%A0%95)
-1. [installer 실행](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-namespace-%EC%83%9D%EC%84%B1)
+0. [tfc-operator Config 설정](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-0-tfc-operator-config-%EC%84%A4%EC%A0%95)
+1. [installer 실행](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-installer-%EC%8B%A4%ED%96%89)
 
 ## Step 0. tfc-operator Config 설정
 * 목적 : `version.conf 파일에 설치를 위한 정보 기입`
@@ -72,7 +72,7 @@
     ```
 
 ## 삭제 가이드
-1. [uninstaller 실행](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-deployment-%EC%82%AD%EC%A0%9C)
+1. [uninstaller 실행](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-uninstaller-%EC%8B%A4%ED%96%89)
 
 ## Step 1. uninstaller 실행
 * 목적 : `tfc-operator를 삭제하기 위한 uninstaller 실행`
