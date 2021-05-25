@@ -56,62 +56,28 @@
     
 
 ## 설치 가이드
-0. [yaml 수정](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-0-yaml-%EC%88%98%EC%A0%95)
-1. [Namespace 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-namespace-%EC%83%9D%EC%84%B1)
-2. [CRD 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-2-crd-%EC%83%9D%EC%84%B1)
-3. [RBAC 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-3-rbac-%EC%83%9D%EC%84%B1)
-4. [Deployment 생성](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-4-deployment-%EC%83%9D%EC%84%B1)
+0. [tfc-operator Config 설정](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-0-yaml-%EC%88%98%EC%A0%95)
+1. [installer 실행](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-namespace-%EC%83%9D%EC%84%B1)
 
-## Step 0. yaml 수정
+## Step 0. tfc-operator Config 설정
+* 목적 : `version.conf 파일에 설치를 위한 정보 기입`
+* 순서 : 환경에 맞는 config 내용 작성
 
-## Step 1. Namespace 생성
-* 목적 : `tfc-operator 설치를 위해 필요한 Namespace를 생성한다.`
-* 생성 순서 : [01_namespace.yaml](manifest/01_namespace.yaml) 실행
-
-## Step 2. CRD 생성
-* 목적 : `tfc-operator에서 감시할 CRD (tfapplyclaim)를 생성한다.`
-* 생성 순서
-  * [02_crd.yaml](manifest/02_crd.yaml) 실행
-  
-## Step 3. RBAC 생성
-* 목적 : `tfc-operator가 동작하기 위해 필요한 권한 설정 (clusterrole, clusterrolebinding)을 생성한다.`
-* 생성 순서
-  * [03_rbac.yaml](manifest/03_rbac.yaml) 실행
-
-## Step 4. Deployment 생성
-* 목적 : `tfc-operator의 Deployment 객체를 생성한다.`
-* 생성 순서
-  * [04_deployment.yaml](manifest/04_deployment.yaml) 실행
+## Step 1. installer 실행
+* 목적 : `설치를 위한 shell script 실행`
+* 순서 : 권한 부여 및 실행
+    ```bash
+     $ sudo chmod +x install.sh
+     $ ./install.sh
+    ```
 
 ## 삭제 가이드
-1. [Deployment 삭제](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-deployment-%EC%82%AD%EC%A0%9C)
-2. [RBAC 삭제](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-2-rbac-%EC%82%AD%EC%A0%9C)
-3. [CRD 제거](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-3-crd-%EC%A0%9C%EA%B1%B0)
-4. [Namespace 제거](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-4-namespace-%EC%A0%9C%EA%B1%B0)
+1. [uninstaller 실행](https://github.com/tmax-cloud/install-tfc-operator/blob/5.0/README.md#step-1-deployment-%EC%82%AD%EC%A0%9C)
 
-## Step 1. Deployment 삭제
-* 목적 : `tfc-operator의 Deployment를 삭제한다.`
-* 삭제 순서 : 아래의 command 순서대로 적용
+## Step 1. uninstaller 실행
+* 목적 : `tfc-operator를 삭제하기 위한 uninstaller 실행`
+* 순서 : 권한 부여 및 실행
     ```bash
-    $ kubectl delete -f manifest/04_deployment.yaml
+     $ sudo chmod +x uninstall.sh
+     $ ./uninstall.sh
     ```
-
-## Step 2. RBAC 삭제
-* 목적 : `RBAC 권한 삭제`
-* 삭제 순서 : 아래의 command로 yaml 적용
-    ```bash
-    $ kubectl delete -f manifest/03.rbac.yaml
-    ```
-    
-## Step 3. CRD 제거
-* 목적 : `tfc-operator 관련 CRD 제거`
-* 삭제 순서 : 아래의 command로 yaml 적용
-    ```bash
-    $ kubectl delete -f manifest/02_crd.yaml
-    ```    
-## Step 4. Namespace 제거
-* 목적 : `tfc-operator가 동작하는 Namespace를 삭제한다`
-* 삭제 순서 : 아래의 command로 yaml 적용
-    ```bash
-    $ kubectl delete -f manifest/01_namespace.yaml
-    ```     
