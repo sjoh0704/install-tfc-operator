@@ -35,7 +35,7 @@
     
     * install yaml을 다운로드한다.
     ```bash
-    $ git clone https://github.com/tmax-cloud/install-tfc-operator.git
+    $ git clone -b 5.0 https://github.com/tmax-cloud/install-tfc-operator.git
     $ cd install-tfc-operator/manifest
     ```
   
