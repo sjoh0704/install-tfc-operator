@@ -13,12 +13,13 @@ spec:
       labels:
         name: tfc-operator
     spec:
+      serviceAccountName: tfc-operator
       containers:
       - command:
         - /manager
         args:
         - --enable-leader-election
-        image: tmaxcloudck/tfapplyclaim-operator:b5.0.0.0
+        image: tmaxcloudck/tfc-operator:{TFC_VERSION}
         name: manager
         resources:
           limits:
@@ -27,4 +28,7 @@ spec:
           requests:
             cpu: 100m
             memory: 20Mi
+        env:
+        - name: TFC_WORKER
+          value: "tmaxcloudck/tfc-worker:v0.0.1"
       terminationGracePeriodSeconds: 10

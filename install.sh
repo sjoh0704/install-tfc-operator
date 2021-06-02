@@ -1,5 +1,5 @@
 sudo chmod +x version.conf
-source version.conf
+source ./version.conf
 
 cd manifest
 
