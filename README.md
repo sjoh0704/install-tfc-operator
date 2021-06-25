@@ -2,7 +2,7 @@
 
 ## 구성 요소 및 버전
 * tfc-operator
-	* image: [tmaxcloudck/tfc-operator:b5.0.16.0](https://hub.docker.com/layers/tmaxcloudck/tfc-operator/b5.0.16.0/images/sha256-fbb9d2611c22c921123a8e3d5aeb993cf4351ae8d4ce58f411ca657064696927?context=explore)
+	* image: [tmaxcloudck/tfc-operator:b5.0.16.1](https://hub.docker.com/layers/tmaxcloudck/tfc-operator/b5.0.16.1/images/sha256-f955cd05b630c07d25ee46c0dca50393047ecce262a60eebbc023ef0afcee728?context=explore)
 	* git: [https://github.com/tmax-cloud/tfc-operator](https://github.com/tmax-cloud/tfc-operator)
 
 * tfc-worker: [tmaxcloudck/tfc-worker:v0.0.1](https://hub.docker.com/layers/tmaxcloudck/tfc-worker/v0.0.1/images/sha256-c7bbe01e2280c497cb8c927b9c6de4db424c2837c275c1eba99e65fb2d8e84cf?context=repo)
@@ -21,7 +21,7 @@
     ```bash
     $ mkdir -p ~/tfc-install
     $ export TFC_HOME=~/tfc-install
-    $ export TFC_VERSION=b5.0.16.0
+    $ export TFC_VERSION=b5.0.16.1
     $ export REGISTRY= XXX.XXX.XXX.XXX:XXXX (e.g.192.168.6.100:5000)
     $ cd $TFC_HOME
     ```
