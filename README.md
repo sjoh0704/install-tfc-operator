@@ -2,7 +2,7 @@
 
 ## 구성 요소 및 버전
 * tfc-operator
-	* image: [tmaxcloudck/tfc-operator:b5.0.16.0](https://hub.docker.com/layers/tmaxcloudck/tfc-operator/b5.0.1.0/images/sha256-4e65c5f02a4c9833d6e196a53996ae918bc05a180794e716b9b869a1228cd868?context=explore)
+	* image: [tmaxcloudck/tfc-operator:b5.0.16.0](https://hub.docker.com/layers/tmaxcloudck/tfc-operator/b5.0.16.0/images/sha256-fbb9d2611c22c921123a8e3d5aeb993cf4351ae8d4ce58f411ca657064696927?context=explore)
 	* git: [https://github.com/tmax-cloud/tfc-operator](https://github.com/tmax-cloud/tfc-operator)
 
 * tfc-worker: [tmaxcloudck/tfc-worker:v0.0.1](https://hub.docker.com/layers/tmaxcloudck/tfc-worker/v0.0.1/images/sha256-c7bbe01e2280c497cb8c927b9c6de4db424c2837c275c1eba99e65fb2d8e84cf?context=repo)
